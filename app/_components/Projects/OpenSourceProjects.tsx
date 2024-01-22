@@ -1,4 +1,5 @@
 import reactPng from './assets/react.png';
+import wordpressPng from "./assets/wordpress.png";
 import laravelPng from './assets/laravel.png'
 import tailwindPng from './assets/tailwind.png';
 import vitePng from './assets/vite.png';
@@ -9,6 +10,7 @@ const projects: ProjectData[] = [
 		id: 1,
 		title: "Garage Parrot",
 		description: "Site d'un garage qui propose des véhicules d'occasions à la vente",
+		website_url: "https://studi-garage.melaine.dev/",
 		github_url: 'https://github.com/melaine69/garage-app',
 		status: 'released',
 		technos: [
@@ -29,8 +31,25 @@ const projects: ProjectData[] = [
 	},
 	{
 		id: 2,
+		title: "Agence de voyages",
+		description: "Site vitrine de Colibri Voyages qui présente des activités, circuits et séjours nationaux et internationaux",
+		website_url: "https://colibri-voyages.melaine.dev/",
+		github_url: 'https://github.com/melaine69/colibri-voyages',
+		status: 'released',
+		technos: [
+			{
+				title: 'Wordpress',
+				photo_url: wordpressPng,
+			},
+			
+		],
+	},
+
+	{
+		id: 3,
 		title: 'Site diététicienne',
 		description: "Site vitrine d'une diététicienne proposant des recettes en fonction des allergènes de ses patients",
+		website_url: 'http://dieteticien-app.test/',
 		github_url: 'https://github.com/melaine69/dieteticien-app',
 		status: 'released',
 		technos: [

@@ -1,4 +1,4 @@
-import { ExternalLink, GitFork, Star } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
