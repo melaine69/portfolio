@@ -2,7 +2,7 @@
 
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-import UserDropdown from "./Userdropdown";
+import UserDropdown from "./UserDropdown";
 
 const AdminHeader = () => {
     return (

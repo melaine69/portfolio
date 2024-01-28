@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
 import ButtonList from "@/components/ui/ButtonList";
 import ButtonItem from "@/components/ui/ButtonList/ButtonItem";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import useSession from "@/hooks/useSession";
 import UpdateEmailBtn from "./_components/UpdateEmailBtn";
-import UpdatePasswordBtn from "./_components/UpdatePassword";
+import UpdatePasswordBtn from "./_components/UpdatePasswordBtn";
 
 const AccountPage = () => {
 

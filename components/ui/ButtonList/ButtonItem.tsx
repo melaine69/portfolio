@@ -40,4 +40,6 @@ const ButtonItem : ForwardRefExoticComponent<ButtonItemsProps> = forwardRef(( {o
 
     )
 })
+ButtonItem.displayName = 'ButtonItem';
+
 export default ButtonItem;

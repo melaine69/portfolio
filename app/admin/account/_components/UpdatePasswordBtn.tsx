@@ -10,8 +10,8 @@ import { DialogDescription, DialogTitle, DialogTrigger } from "@radix-ui/react-d
 import { Loader2, Save } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
 
+import { z } from "zod";
 
 const UpdatePasswordFormSchema = z.object({
     password: z.string().min(8, 'Password must contain at least 8 chars.'),

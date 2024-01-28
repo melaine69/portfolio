@@ -2,7 +2,15 @@ import supabase from "@/lib/database";
 import { AuthError, User } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 
-const useSession = () => {
+
+type Session = {
+    user: User | null;
+    loading: boolean;
+    error: AuthError | null;
+    refreshSession: () => Promise<void>;  // Assurez-vous que cette ligne est présente
+};
+
+const useSession = (): Session => {
     const [user, setUser] = useState<User | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<AuthError | null>(null);
@@ -32,7 +40,7 @@ const useSession = () => {
             if(error) setError(error);
             setUser(session?.user || null);
         } catch (error) {
-        console.log(error)
+        console.error(error)
         } finally {
             setLoading(false);
         }
@@ -42,6 +50,7 @@ const useSession = () => {
         user,
         loading,
         error,
+        refreshSession,
     }
 
 }

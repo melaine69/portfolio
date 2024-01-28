@@ -9,7 +9,7 @@ const UserDropdown = () => {
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Avatar>
-                        <AvatarImage src="" alt="Profile Picture"/>
+                        <AvatarImage src="#" alt="Profile Picture"/>
                         <AvatarFallback className="bg-slate-100 cursor-pointer"><User size="16"/></AvatarFallback>
                     </Avatar>
                 </DropdownMenuTrigger>
