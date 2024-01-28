@@ -15,7 +15,7 @@ const Home = () => {
 	return (
 		<>
 			<div className="pb-2 lg:pb-8 bg-gradient-to-tr relative from-[#ffce97] to-[#ffd6b5] 2xl:min-h-screen">
-				<div className="absolute inset-0 bg-gradient-to-t from-white to-transparent 2xl:min-h-screen z-0">
+			<div className="absolute inset-0 bg-gradient-to-t from-white to-transparent 2xl:min-h-screen z-0">
 				</div>
 				<div className="relative 2xl:min-h-screen z-10">
 					<div className="px-2 md:px-8 py-2 md:py-8">
@@ -27,18 +27,7 @@ const Home = () => {
 							<h1 className="text-xl md:text-2xl lg:text-5xl 2xl:text-6xl font-bold">Je suis Mélaine</h1>
 							<h2 className="text-xl md:text-2xl lg:text-5xl 2xl:text-6xl font-semibold">Développeuse passionnée</h2>
 						</div>
-						<div className="mx-auto flex gap-4 mb-8 sm:mb-12 md:mb-20 lg:mb-6 xl:mb-10 2xl:mb-32">
-							<Button
-								className="gap-2"
-								asChild>
-								<Link
-									href="/CV.pdf"
-									target="_blank">
-									<Download size="16" />
-									Télécharger mon c.v
-								</Link>
-							</Button>
-						</div>
+					
 						<AboutMe />
 					</div>
 				</div>
@@ -67,8 +56,11 @@ const Home = () => {
 						<ProfessionalProjects />
 					</TabsContent>
 				</Tabs>
-				<Button
-					className="mx-auto gap-2 items-center"
+		
+			
+			
+			<Button
+					className="mx-auto gap-2 items-center relative z-20"
 					variant="link"
 					asChild>
 					<Link
@@ -77,7 +69,9 @@ const Home = () => {
 						En savoir plus sur GitHub <ExternalLink size="16" />
 					</Link>
 				</Button>
+				
 			</div>
+			
 			<Footer />
 		</>
 	);

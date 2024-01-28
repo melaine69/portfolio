@@ -26,7 +26,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
 	return (
-		<Card className="w-full lg:min-w-[700px] lg:max-w-[750px]">
+		<Card className="bg-red w-full lg:min-w-[700px] lg:max-w-[750px]">
 			<CardHeader>
 				<CardTitle>{ project.title }</CardTitle>
 				<CardDescription>{ project.description }</CardDescription>

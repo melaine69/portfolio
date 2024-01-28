@@ -1,33 +1,42 @@
-import Image from 'next/image';
+
+import { Button } from '@/components/ui/button';
 import profil from '@/public/profil.jpg';
+import { Download } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+
 
 export default function Aboutme() {
     return (
-        <div className="grid grid-cols-12 grid-rows-6" id="aboutme">
-            <div className="col-start-1 col-span-8 row-start-1 row-span-6 pt-10">
-                <h3 className="text-5xl font-bold mb-14">A propos de moi</h3>
-                <div className="p-8  border border-slate-100 bg-white/50 backdrop-blur-lg drop-shadow-lg rounded-2xl relative z-20">
-                    <h2 className="text-2xl font-semibold mb-6">Qui-suis-je ?</h2>
-                    <p className="text-base m-8">
-                    Je suis développeuse full-stack. J&apos;aime l&apo;saspect créatif du métier, le fait de construire un projet brique par brique et collaborer avec une équipe pluridisciplinaire.
-                        Je suis lyonnaise et j&apos;aime travailler en autonomie mais aussi en équipe.
+
+        <div>
+            <div className="mt-8 mx-auto grid md:grid-cols-2 gap-10 mb-10 p-10 rounded-3xl border border-slate-100 bg-white/50 backdrop-blur-lg drop-shadow-lg relative z-20">
+                <div>
+                    <h2 className="mb-6 text-2xl font-bold">A propos</h2>
+                    <p className="text-lg text-justify font-medium">Je suis développeuse full-stack. J'aime l'aspect créatif du métier, le fait de construire un projet brique par brique et collaborer avec une équipe pluridisciplinaire.
+                        Je suis lyonnaise et j'aime travailler en autonomie mais aussi en équipe.
                     </p>
-                </div>
+                    <div className='py-10'>
+                        <Button
+                            className="gap-2"
+                            asChild>
+                            <Link
+                                href="/CV.pdf"
+                                target="_blank">
+                                <Download size="16" />
+                                Télécharger mon c.v
+                            </Link>
+                        </Button>
+                    </div>
 
-            </div>
-            <div className="col-start-8 col-span-4 row-start-1 row-span-5">
-                <div className="w-fit h-fit rounded-2xl drop-shadow-lg">
-                <Image
-                    className="rounded-2xl relative z-10"
-                    width={500}
-                    height={500}
-                    src={profil}
-                    alt="profil"
-                />
                 </div>
-             
+                <div>
+                    <Image src={profil} alt="portrait" className='rounded-lg' />
+                </div>
             </div>
-
         </div>
+
+
     )
 }

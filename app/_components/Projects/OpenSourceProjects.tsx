@@ -1,4 +1,4 @@
-import reactPng from './assets/react.png';
+import nextJs from "./assets/nextjs.svg"
 import wordpressPng from "./assets/wordpress.png";
 import laravelPng from './assets/laravel.png'
 import tailwindPng from './assets/tailwind.png';
@@ -47,6 +47,27 @@ const projects: ProjectData[] = [
 
 	{
 		id: 3,
+		title: "Portfolio photograhe",
+		description: "Site vitrine pour le portfolio d'un photographe avec galerie et tarifications",
+		website_url: "https://strong-gecko-44e3b1.netlify.app/",
+		github_url: 'https://github.com/melaine69/charles-photographe',
+		status: 'released',
+		technos: [
+			{
+				title: 'NextJs',
+				photo_url: nextJs,
+			},
+			{
+				title: 'Tailwind',
+				photo_url: tailwindPng,
+			},
+
+			
+		],
+	},
+
+	{
+		id: 4,
 		title: 'Site diététicienne',
 		description: "Site vitrine d'une diététicienne proposant des recettes en fonction des allergènes de ses patients",
 		website_url: 'http://dieteticien-app.test/',

@@ -9,7 +9,9 @@ const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className="px-2 w-full lg:container lg:m-auto lg:px-8">
+		
+		<footer className=" px-10 bg-gradient-to-b from-[#ffd6b5] to-[#ffce97]">
+
 			<Separator orientation="horizontal" />
 			<div className="grid grid-cols-1 lg:grid-cols-12 pt-8 pb-8 lg:pb-16">
 				<div className="lg:col-start-1 lg:col-span-6 flex flex-col justify-between items-start">
@@ -19,7 +21,7 @@ const Footer = () => {
 					>
 						<Layers size="64" />
 						<span className="flex flex-col">
-							<span className="text-2xl font-semibold">Mélaine DEWITTE</span>
+							<span className="text-2xl font-semibold">Mélaine D.</span>
 							<span className="text-lg">© { currentYear }</span>
 						</span>
 					</Link>
