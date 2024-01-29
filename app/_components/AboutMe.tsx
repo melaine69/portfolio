@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import profil from '@/public/profil.jpg';
 import { Download } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
+
 
 
 
@@ -21,12 +21,13 @@ export default function Aboutme() {
                         <Button
                             className="gap-2"
                             asChild>
-                            <Link
+                            <a
                                 href="/CV.pdf"
-                                target="_blank">
+                                target="_blank"
+                                download>
                                 <Download size="16" />
                                 Télécharger mon c.v
-                            </Link>
+                            </a>
                         </Button>
                     </div>
 
