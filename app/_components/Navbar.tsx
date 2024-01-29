@@ -16,7 +16,7 @@ export default function Navbar() {
 			</Link>
 			<NavigationMenu>
 				<NavigationMenuList>
-					<NavigationMenuItem className="lg:inline-flex">
+					<NavigationMenuItem className="hidden lg:inline-flex">
 						<Link
 							href="#aboutme"
 							legacyBehavior
